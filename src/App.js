@@ -5,6 +5,8 @@ import Cart from "./Pages/Cart";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import Upload from "./Pages/Upload";
+import AdminLogin from "./Pages/AdminLogin";
+import AdminDashboard from "./Pages/AdminDashboard";
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
       <Navbar />
 
       <Routes>
+        <Route path="/admin/login" element={<AdminLogin />} />
+        <Route path="/admin/dashboard" element={<AdminDashboard />} />
         <Route path="/" element={<Home />} />
         <Route path="/listings" element={<Listings />} />
         <Route path="/upload" element={<Upload />} />

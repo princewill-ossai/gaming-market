@@ -45,8 +45,12 @@ function Upload() {
         formData.append("images", img);
       }
 
+      const token = localStorage.getItem("token");
       const res = await fetch("https://gaming-market-back.onrender.com/listings", {
         method: "POST",
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
         body: formData,
       });
 
