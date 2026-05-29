@@ -12,7 +12,7 @@ export default function AdminDashboard() {
     if (!token) {
       navigate("/admin/login");
     }
-  }, []);
+  }, [navigate]);
 
   const logout = () => {
     localStorage.removeItem("token");
