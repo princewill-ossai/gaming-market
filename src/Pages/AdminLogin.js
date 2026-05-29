@@ -6,7 +6,7 @@ export default function AdminLogin() {
 
 const login = async () => {
   const res = await fetch(
-    "http://localhost:5000/auth/login",
+    "https://gaming-market-back.onrender.com/auth/login",
     {
       method: "POST",
       headers: {
