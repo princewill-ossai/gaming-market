@@ -34,7 +34,7 @@ Game: ${listing.game}
 Level: ${listing.level}
 Price: ₦${listing.price}`;
 
-    const url = `https://wa.me/2348100322216?text=${encodeURIComponent(
+    const url = `https://wa.me/2348124761625?text=${encodeURIComponent(
       message
     )}`;
 

@@ -3,8 +3,9 @@ import { Link } from "react-router-dom";
 
 function Hero() {
   return (
-    <div className="h-screen flex items-center justify-center text-center px-4">
+    <div className="relative h-screen flex items-center justify-center text-center px-4 overflow-hidden">
       <motion.div
+        className="relative z-10"
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
@@ -26,14 +27,14 @@ function Hero() {
             Browse Accounts
           </Link>
 
-          <button className="border cursor-pointer border-white/20 px-6 py-3 rounded-xl hover:bg-white/10 transition">
-            Sell Account
-          </button>
+          <Link to="/admin/login" className="border cursor-pointer border-white/20 px-6 py-3 rounded-xl hover:bg-white/10 transition">
+                Sell Account
+          </Link>
         </div>
       </motion.div>
 
       {/* glowing background effect */}
-      <div className="absolute w-[400px] h-[400px] bg-purple-600 blur-[150px] opacity-20 rounded-full" />
+      <div className="absolute z-0 w-[400px] h-[400px] bg-purple-600 blur-[150px] opacity-20 rounded-full" />
     </div>
   );
 }

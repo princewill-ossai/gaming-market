@@ -33,7 +33,7 @@ const login = async () => {
    const openWhatsApp = (listing) => {
     const message = `Hi, i'm from ur store, i have an account for sale`;
 
-    const url = `https://wa.me/2348124761652?text=${encodeURIComponent(
+    const url = `https://wa.me/2348124761625?text=${encodeURIComponent(
       message
     )}`;
 
